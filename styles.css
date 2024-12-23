@@ -1,0 +1,49 @@
+/* Created by Tivotal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+}
+
+.slider {
+  position: relative;
+  cursor: pointer;
+}
+
+.slider .level {
+  appearance: none;
+  width: 220px;
+  height: 60px;
+  background: #999;
+  transform: rotate(-90deg);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: inherit;
+  transition: height 0.3s;
+}
+
+.slider .level::-webkit-slider-thumb {
+  appearance: none;
+  width: 0;
+  height: 0;
+  box-shadow: -200px 0 0 200px #fff;
+}
+
+.slider .volume {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -210%;
+  fill: #999;
+}
